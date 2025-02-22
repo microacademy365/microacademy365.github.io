@@ -3,62 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micro Academy</title>
+    <title>Micro Academy | Power Platform Training</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
             background-color: #f3f7e7;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
         }
         .banner {
             width: 100%;
-            max-width: 900px;
-            margin: 20px auto;
-            display: block;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            text-align: left;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
         h1 {
             color: #004080;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0078D4;
+            margin-top: 20px;
+            font-size: 1.5em;
         }
         ul {
-            list-style-type: square;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
         }
-        a {
-            color: blue;
-            font-weight: bold;
+        ul li {
+            font-size: 1.1em;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li::before {
+            content: "✔";
+            color: #0078D4;
+            margin-right: 8px;
+        }
+        .cta {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #0078D4;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .cta:hover {
+            background-color: #005a9e;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <!-- <img src="images/banner.png" alt="Micro Academy Banner" class="banner"> -->
+    <div class="container">
+        <img src="images/banner.png" alt="Micro Academy Banner" class="banner">
 
-    <div class="content">
-        <h1>Office 365 Power Platform Training</h1>
+        <h1>Power Platform Training</h1>
+        <p>Start your IT journey with our expert-led training on Microsoft Power Platform.</p>
+
+        <h2>What You Will Learn:</h2>
         <ul>
-            <li>SharePoint</li>
-            <li>PowerApps</li>
-            <li>Power Automate</li>
+            <li>SharePoint Development</li>
+            <li>PowerApps Customization</li>
+            <li>Power Automate Workflows</li>
             <li>Power BI – Foundation</li>
             <li>Dataverse – Foundation</li>
-            <li>Real-life Projects</li>
+            <li>Real-Life Projects & Case Studies</li>
         </ul>
-        <h2>Featuring:</h2>
+
+        <h2>Additional Skills Covered:</h2>
         <ul>
-            <li>Communication Skills</li>
-            <li>And more!</li>
+            <li>Communication & Collaboration</li>
+            <li>Problem-Solving in IT</li>
+            <li>Professional Development</li>
         </ul>
 
-        <p><a href="https://forms.office.com/" target="_blank">Sign Up for Power Platform Training</a></p>
+        <a href="https://forms.office.com/" class="cta" target="_blank">Sign Up for Training</a>
 
-        <p><strong>Orientation:</strong> Feb 22nd at 12PM EST</p>
+        <p class="footer">📅 Orientation: Feb 22nd at 12 PM EST</p>
     </div>
 
 </body>
